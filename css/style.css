@@ -1,0 +1,741 @@
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+   background-color: rgb(0, 0, 15);
+}
+
+
+.title{
+    box-shadow: 0px 0px 5px #bebebe;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    width: 235px;
+}
+.title h2{
+    color: rgb(15, 109, 192);
+    margin: 0%;
+
+}
+.title h1{
+
+    color: rgb(255, 0, 0);
+    margin: 0%;
+}
+.title img{
+    width: 50px;
+    margin-right: 5px;
+}
+
+.mainvid{
+    width: 100%;
+
+ height: 70%;
+
+display: flex;
+
+}
+.mainvid .vid-main-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.vid-container{
+    background-color: rgb(2, 28, 34);
+margin-top: 8px;
+height: 98%;
+padding-right: 7%;
+border-radius: 5px;
+}
+.vid-container iframe{
+width: 100%;
+height: 90%;
+margin: 8px;
+box-shadow:0px 0px 15px #000000;
+}
+.topheader{
+    background-color: rgb(2, 28, 34);
+    width: 100%;
+    height: 20px;
+
+}
+.mainvidinfo{
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 10px;
+    background-color: rgb(2, 28, 34);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.mainvidinfo h1{
+    box-shadow:0px 0px 15px #000000;
+    width: 60%;
+    background-color: #5b0d0d;
+    font-size: 5rem;
+    margin: 0%;
+    text-align: center;
+    color: #dddddd;
+}
+.mainvidinfo h2{
+    box-shadow: 0px 0px 15px #000000;
+margin: 0%;
+    background-color: #06b7c3;
+    width: 60%;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 4rem;
+    color: #5b0d0d;
+}
+.mainvidinfo .socialmedia{
+position: relative;
+top: 70px;
+}
+.mainvidinfo .socialmedia h3{
+    color: #bebebe;
+    margin: 0%;
+    padding: 3 0px;
+}
+.mainvidinfo .socialmedia1{
+   width: 200px;
+   height: 40px;
+   padding: 5 20px;
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0px 0px 15px #000000;
+    }
+.mainvidinfo .socialmedia img{
+    width: 60px;
+    height: 100%;
+margin: 3px;
+}
+.mainvidinfo .socialmedia img:hover{
+    box-shadow: none;
+    cursor: pointer;
+transform: translateY(-6%);
+}
+
+.newrelease{
+   
+border-radius: 10px;
+height: 100%;
+padding-bottom: 25px;
+left: 30;
+width: 96%;
+position: relative;
+border: 1px solid#626262;
+}
+
+.newrelease .heading{
+    width: 30%;
+    display: flex;
+align-items: center;
+}
+.newrelease h1{
+padding: 0 20px;
+background-color: rgb(137, 151, 165);
+    color: rgb(1, 1, 19);
+margin-left: 4px;
+    box-shadow: 0px 0px 5px #000000;
+}
+.newrelease h2{
+padding: 3 9px;
+border-top:1px solid#fff ;
+border-left:1px solid#fff ;
+border-bottom: 1px solid#fff;
+    color: rgb(28, 195, 221);
+    margin-left: 2%;
+}
+
+
+
+.newrelease1{
+
+    display: flex;
+    flex-direction: column;
+    height: 415px;
+
+    
+    }
+    .newrelease1 h1{
+    font-weight: 500;
+  
+    color: #bebbbb;
+    border-radius: 5px;
+        margin-left: 2%;
+    }
+    .newrelease1 video{
+width: 100%;
+
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #000000;
+    }
+    .newrelease1 .videos1{
+        display: flex;
+        margin: 10px;
+        overflow-x: hidden;
+    }
+    .newrelease1 .videos1:hover{
+        overflow-x: auto;
+    }
+
+
+
+
+    .language .box{
+        display: flex;
+        margin-top: 1%;
+align-items: flex-start;
+justify-content: flex-start;
+    }
+   
+
+.language{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  
+}
+
+.language .column1 h2{
+    
+    color: rgb(231, 235, 238);
+    margin: 0%;
+   bottom: 8;
+   padding: 1 25px;
+   background-color: rgb(1, 1, 19);
+   box-shadow: 0px 0px 4px #000000 inset;
+   position: relative;
+}
+.language .column :active{
+    background-color: rgb(1, 1, 19);  
+}
+.language .column h2{
+    color: rgb(231, 235, 238);
+    margin: 0%;
+   bottom: 8;
+   padding: 1 25px;
+   background-color: rgb(1, 1, 19);
+   box-shadow: 0px 0px 4px #000000 inset;
+   position: relative;
+}
+.language h1{
+    
+     color: #bebbbb;
+    margin-left: 2%;
+    border-radius: 5px;
+font-weight: 500;
+}
+.language .column{
+    width: 215px;
+    height: 140px;
+    display: flex;
+    transition: transform .2s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(30deg, rgb(19, 6, 54) 0%, rgb(54, 9, 80) 100%);
+    box-shadow: 0px 0px 4px #000000;
+border-bottom-right-radius: 90px;
+
+margin-left: 20px;
+}
+.language .column img{
+    width: 195px;
+    height: 100px;
+    padding: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 4px #000000;
+    background: linear-gradient(30deg, rgb(107, 21, 157) 0%, rgb(40, 15, 106) 100%);
+}
+.language .column:hover{
+   cursor: pointer;
+transform: translateY(-7%);
+}
+.language .column1{
+    width: 215px;
+    height: 140px;
+    display: flex;
+    transition: transform .2s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(30deg, rgb(5, 73, 122) 50%, rgb(8, 81, 199) 100%);
+    box-shadow: 0px 0px 4px #000000;
+    border-bottom-right-radius: 90px;
+margin-left: 20px;
+}
+.language .column1 img{
+    width: 195px;
+    height: 100px;
+    padding: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 4px #000000;
+    background: linear-gradient(30deg, rgb(13, 97, 232) 50%,  rgb(10, 91, 148) 100%);
+}
+.language .column1:hover{
+   cursor: pointer;
+transform: translateY(-7%);
+}
+
+
+
+
+
+
+.Acters .box3{
+    display: flex;
+    margin-top: 1%;
+}
+
+.Acters{
+    display: flex;
+    margin-top: 10px;
+   margin-left: 10px;
+    flex-direction: column;
+}
+.Acters img{
+    width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+   margin-left: 25px;
+
+}
+
+.Acters h1{
+font-weight: 500;
+border-radius: 5px;
+    margin-left: 2%;
+     color: #bebbbb;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 4px;
+  }
+body::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+   
+    background: #07dde4;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d50505; 
+  }
+  
+
+
+
+
+footer{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+margin-top: 50px;
+    height: 350px;
+    background-color: rgb(2, 28, 34);
+}
+
+
+.newrelease .marathi-acters{
+height: 75px;
+width: 800px;
+    margin-left: 2%;
+overflow-y: scroll;
+}
+.newrelease .flexdire img{
+width: 70px;
+border-radius: 100%;
+margin: 3px;
+}
+.newrelease  img:hover{
+cursor: pointer;
+}
+.newrelease .box{
+height: 380px;
+ width: 100%;
+
+}
+.newrelease .box1 .column{
+    width: 300px;
+    height: 160px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px #000000;
+
+}
+.newrelease .box1{
+
+    display: flex;
+    justify-content: center;
+   height: 370px;
+ width: 100%;
+ overflow-y: scroll;
+flex-wrap: wrap;
+
+}
+.newrelease .box1 .column img{
+   width: 100%;
+    height: 100%;
+
+border-radius: 5px;
+}
+
+.newrelease .flexdire{
+    display: flex;
+}
+
+  .column {
+    
+  
+    display: none; 
+  }
+  
+
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+  .show {
+    display: block;
+  }
+  
+
+
+
+@media (max-width:980px) {
+
+    body
+    {
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .newrelease1{
+
+        display: flex;
+        flex-direction: column;
+        height: auto;
+       width: 100%;
+
+
+    }
+    .newrelease1 .videos1{
+        display: flex;
+justify-content: flex-start;
+        overflow-x: scroll;
+ 
+margin: 0;
+       
+    }
+
+    .newrelease1 video{
+
+
+border-radius: 1px;
+     margin-right: 0px;
+    height: 150px;
+       width: 100%;
+    }
+
+    .newrelease1 h1{
+      font-size: medium;
+      font-weight: 400;
+       
+        }
+
+        .language{
+            display: flex;
+        
+            flex-direction: column;
+ 
+        }
+        .language .column h2{
+            font-weight: 400;
+       
+            margin: 0%;
+           bottom: 9;
+           padding: 1 30px;
+     font-size: medium;
+           position: relative;
+        }
+      
+    .language .box{
+      margin-left: 0%;
+height: 140px;
+align-items: center;
+        display: flex;
+        margin-top: 20px;
+        overflow-x: scroll;
+    }
+        .language h1{
+      font-size: large;
+            margin: 0%;
+            font-weight: 400;
+       
+          width: 100%;
+            
+        }
+        .language .column{
+            width: 150px;
+            height: 115px; 
+          border-radius: 5px;
+        margin-left: 3px;
+        }
+        .language .column img{
+            width: 150px;
+            height: 80px;
+            padding: 5px;
+            position: relative;
+            bottom: 5;
+
+box-shadow: 2px 0px 5px #000000;
+            margin-bottom: 0%;
+           
+        }
+
+        .language .column1 h2{
+            font-weight: 400;
+       
+            margin: 0%;
+           bottom: 9;
+           padding: 1 30px;
+     font-size: medium;
+           position: relative;
+        }
+      
+    
+      
+        .language .column1{
+            width: 150px;
+            height: 115px;
+           
+          border-radius: 5px;
+        margin-left:20px;
+       margin-right: 20px;
+        }
+        .language .column1 img{
+            width: 150px;
+            height: 80px;
+            padding: 5px;
+            position: relative;
+            bottom: 5;
+
+box-shadow: 2px 0px 5px #000000;
+            margin-bottom: 0%;
+           
+        }
+
+        
+
+
+.Acters{
+    display: flex;
+    overflow-x: scroll;
+}
+.Acters img{
+    width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 100%;
+   margin-left: 3px;
+
+}
+
+.Acters h1{
+
+
+margin: 0%;
+    font-size: large;
+    font-weight: 400;
+       
+
+}
+
+
+
+.Acters .box2{
+    display: flex;
+    overflow-x: scroll; 
+}
+
+
+        
+      
+
+
+
+.newrelease{
+   
+    border-radius: 10px;
+height: 100%;
+    padding-bottom: 0%;
+    left: 0;
+  width: 99%;
+
+    position: relative;
+
+    }
+  
+@media (min-width: 350px) and (max-width: 500px) {
+    .newrelease .box1 .column{
+
+height: 40%;
+
+    }
+    .vid-container iframe{
+        width: 50%;
+        margin: 5px;
+        }
+}
+@media (min-width: 301px) and (max-width: 480px) {
+    .mainvid{
+     height: 40%; 
+    margin-top: 0%;
+    }
+    .vid-container iframe{
+        width: 100%;
+        margin: 5px;
+        }
+}
+@media (min-width: 100px) and (max-width: 300px) {
+    .mainvid{
+     height: 30%;
+    }
+    .vid-container iframe{
+        width: 95%;
+        margin: 5px;
+        }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+    .mainvid{
+     height: 45%;
+    }
+    .vid-container iframe{
+        width: 100%;
+        margin: 5px;
+        }
+}
+@media (min-width: 601px) and (max-width: 700px) {
+    .mainvid{
+     height: 55%;
+    }
+    .vid-container iframe{
+        width: 100%;
+        margin: 5px;
+        }
+}
+.mainvid{
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0%;
+}
+
+    .newrelease h1{
+padding: 0 10px;
+
+    font-size: large;
+        }
+        .newrelease h2{
+        font-weight: 400;
+     font-size: medium;
+            margin-left: 2%;
+        }
+        
+
+
+
+        .newrelease .heading{
+            width: 100%;
+   
+        }
+.newrelease .box{
+  margin-top: 0%;
+ height:550px;
+ width: 100%;
+
+
+}
+.newrelease .box1{
+    margin-top: 0%;
+   height:520px;
+   width: 100%;
+
+  
+  }
+  
+ 
+
+.vid-container{
+
+width: 100%;
+padding: 0%;
+display: flex;
+justify-content: center;
+align-self: center;
+}
+
+
+
+
+.newrelease .flexdire{
+    display: flex;
+    flex-direction: column;
+}
+.newrelease .marathi-acters{
+    height: 51px;
+    width: 100%;
+        overflow-x: auto;
+        margin-left: 1%;
+     
+display: flex;
+justify-content: center;
+align-items: center;
+    
+    }
+    .newrelease .flexdire img{
+    width: 50px;
+    border-radius: 100%;
+    margin: 3px;
+    }
+
+    .topheader{
+        background-color: #1c1b1b;
+        width: 100%;
+        height: 20px;
+    
+    }
+    .mainvidinfo{
+  display: none;}
+    
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+      }
+}

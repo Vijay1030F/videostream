@@ -1,0 +1,33 @@
+<html>
+    <body>
+        
+        <p>In 2018, YouTube deprecated the showinfo parameter that toggles the users avatar, video title and share icons at the top of the video when it is first started and when it is paused. This is annoying when using an embedded video in a background or banner. Fortunately, the info is always fixed in the top corners of the frame, rather than the video, so by moving these areas off screen we can maintain full video aspect ratio without any YouTube gunf. It's possible to add your own custom controls using the JavaScript API.</p>
+
+<div class="youtube-container">
+	<iframe src="https://www.youtube.com/embed/WhY7uyc56ms?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=WhY7uyc56ms" title="YouTube video player" frameborder="0" allow="accelerometer; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+</div>
+
+    </body>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        .youtube-container {
+            overflow: hidden;
+            width: 100%;
+            /* Keep it the right aspect-ratio */
+            aspect-ratio: 16/9;
+            /* No clicking/hover effects */
+            pointer-events: none;
+            
+            iframe {
+                /* Extend it beyond the viewport... */
+                width: 300%;
+                height: 100%;
+                /* ...and bring it back again */
+                margin-left: -100%;
+            }
+        }
+    </style>
+</html>

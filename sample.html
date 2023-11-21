@@ -1,0 +1,114 @@
+<html>
+  <body>
+    <container class="vid-main-wrapper clearfix" id="#">
+      <div class="vid-container">
+        <iframe id="vid_frame" src="https://www.youtube.com/embed/WAcnWtZjDWE?rel=0&showinfo=0&autohide=1&autoplay=1" frameborder="0" width="560" height="315" allow="autoplay" allowfullscreen></iframe>
+      </div>
+    </container>
+
+    <nav class="swiper swiper-container-videos slider-produtos-destaque">
+      <ol class="swiper-wrapper" style="list-style-type: none; padding: 0px;">
+        <li class="swiper-slide">
+          <a class="" href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/WAcnWtZjDWE?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <span class="vid-thumb">
+     <img src="https://img.youtube.com/vi/WAcnWtZjDWE/mqdefault.jpg" />
+        </span>
+                  <p class="desc">Video 1</p>
+                </a>
+        </li>
+
+        <li class="swiper-slide">
+          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/h8r5rbUmBzs?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                  <span class="vid-thumb"><img  src="https://img.youtube.com/vi/h8r5rbUmBzs/mqdefault.jpg" /></span>
+                  <p class="desc">Video 2</p>
+                </a>
+        </li>
+
+        <li class="swiper-slide">
+          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/togt3pGntVc?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                  <span class="vid-thumb"><img  src="https://img.youtube.com/vi/togt3pGntVc/mqdefault.jpg" /></span>
+                  <div class="desc">Video 3</div>
+                </a>
+        </li>
+
+        <li class="swiper-slide">
+          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/JyqD_zfXfi8?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                  <span class="vid-thumb"><img  src="https://img.youtube.com/vi/JyqD_zfXfi8/mqdefault.jpg" /></span>
+                  <div class="desc">Video 4</div>
+                </a>
+        </li>
+
+        <li class="swiper-slide">
+          <a href="javascript:void();#" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/X8sSXU-J8fI?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                  <span class="vid-thumb"><img  src="https://img.youtube.com/vi/X8sSXU-J8fI/mqdefault.jpg" /></span>
+                  <div class="desc">Video 5</div>
+                </a>
+        </li>
+
+      </ol>
+     
+
+    </nav>
+    <script>
+      $(document).ready(function() {
+   
+        var part1 = "<div class=swiper-pagination></div>";
+    
+        $("#swiper-press").append(part1);
+      });
+      
+    
+      $(".swiper-container-videos .swiper-wrapper .swiper-slide iframe").click(function() {
+        $(this)
+          .closest(".swiper-slide")
+          .addClass("selected")
+          .siblings()
+          .removeClass("selected");
+        mySwiper1.slideTo(mySwiper1.clickedIndex);
+      });
+      
+      $(".swiper-container-videos .swiper-slide")
+        .first()
+        .addClass("selected");
+    
+      var mySwiper1 = new Swiper(".swiper-container-videos", {
+    
+        loop: false,
+    
+        slidesPerView: "auto",
+        spaceBetween: 15,
+        centeredSlides: false,
+    
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-custom-next",
+          prevEl: ".swiper-custom-prev"
+        },
+      
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true
+        }
+      });
+      
+      
+      $(function() {
+    
+        $(".vid-container").fitVids();
+      });
+    
+      $(document).ready(function() {
+        $(".vid-item").each(function(index) {
+          $(this).on("click", function() {
+            var current_index = index + 1;
+            $(".vid-item .thumb").removeClass("active");
+            $(".vid-item:nth-child(" + current_index + ") .thumb").addClass("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
